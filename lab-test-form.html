@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="lab-test-form.css" />
+    <title>Lab Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-page">
+        <form id="myform" class="lab-test-form">
+          <div class="user-details">
+            <span class="details">1. Your Contact Details</span>
+            <div class="details-box">
+              <div class="input-box">
+                <input type="text" placeholder="Full Name" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Patient Id If exists" />
+              </div>
+              <div class="input-box">
+                <input type="number" placeholder="Contact Number" />
+              </div>
+              <div class="input-box">
+                <input type="email" placeholder="Email Id" />
+              </div>
+            </div>
+          </div>
+          <div class="user-details">
+            <span class="details">2. Address</span>
+            <div class="details-box">
+              <div class="input-box">
+                <input type="text" placeholder="H-No" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Street" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Area" />
+              </div>
+            </div>
+              <div class="input-box-list">
+                <span class="district-list">District</span>
+                <select name="cars" id="cars">
+                    <option value="Choose">Choose</option>
+                    <option value="Alapuzha">Alapuzha</option>
+                  <option value="Kochi">Kochi</option>
+                  
+                  <option value="Kollam">Kollam</option>
+                  <option value="Kottayam">Kottayam</option>
+                </select>
+              </div>
+            
+          </div>
+          <div class="user-details">
+            <span class="details">3. Choose the Test Type</span>
+            <span id="warningDiv">(Check atleast one box without fail)</span>
+            <div class="details-box">
+              <div class="category-1">
+                <div class="category-2">
+                  <label for="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="test-type">CBC</span>
+                  </label>
+                </div>
+                <div class="category-2">
+                  <label for="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="test-type">Complete Urine</span>
+                  </label>
+                </div>
+                <div class="category-2">
+                  <label for="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="test-type">Lipid Profile</span>
+                  </label>
+                </div>
+                <div class="category-2">
+                  <label for="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="test-type"
+                      >Thyroid Stimulating Hormone(TSH)</span
+                    >
+                  </label>
+                </div>
+                <div class="category-2">
+                  <label for="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="test-type">Glucose Test</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-details">
+            <span class="details"
+              >4. Do you want a hard copy of the report also?</span
+            >
+            <div class="radio-section">
+              <div class="category-3">
+                <label for="">
+                  <input type="radio" name="report-req"/>
+                  <span class="test-type">Yes</span>
+                </label>
+                <label for="">
+                  <input type="radio" name="report-req" />
+                  <span class="test-type">No</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="user-details">
+            <span class="details"
+              >5. Select Your Comfortable Date and Time</span
+            >
+            <div class="date-section">
+              <div class="category-5">
+                <div class="input-box-1">
+                  <input type="date" placeholder="Date" />
+                </div>
+                <div class="input-box-1">
+                  <input type="time" placeholder="Time" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="img-background">
+        <img src="/images/lab-test.jpg" alt="" />
+      </div>
+    </div>
+    <div class="button">
+      <input type="reset" form="myform" value="Reset" />
+      <input type="submit" form="myform" value="Submit" />
+    </div>
+  </body>
+</html>

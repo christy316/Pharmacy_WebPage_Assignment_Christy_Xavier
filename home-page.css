@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;  
+}
+body,html {
+    padding: 0;
+    margin: 0;
+
+}
+#navigation h1{
+    text-align: right;
+    color : white;
+    padding: 15px;
+    padding-right: 100px;
+    background-color: rgb(80,80,80);
+    margin: 0;
+    font-size: 42px;
+
+}
+#navigation{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#navigation ul{
+        background-color: rgb(132, 131, 131);
+        margin: 0;
+        padding: 0;
+}
+
+
+.menu li {
+    display: inline-block; 
+    margin: 8px;   
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.submenu {
+    position: absolute;
+    display: none;
+}
+
+.submenu li{
+    display: block;
+    background-color: white; 
+    padding: 8px;
+    margin: 0;
+}
+.submenu li a{
+    text-decoration: none;
+    color: rgb(93, 187, 218);
+}
+
+.menu li:hover{
+    background-color: black;
+    padding: 8px;
+    margin: 0;
+}
+.submenu li:hover{
+    background-color: black;
+    padding: 8px;
+    margin: 0;
+}
+
+.menu li:nth-child(2):hover .submenu,
+.menu li:nth-child(3):hover .submenu{
+    display: block;
+}
+footer{
+    position : absolute;
+    bottom : 0;
+    height : 50px;
+    margin-top : 40px;
+    background-color: rgb(80,80,80);
+    width: 100%;    
+}
+footer p{
+    padding-right: 50px;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+footer{
+    position: sticky;
+}
+
+@keyframes cf4FadeInOut {
+    25% {
+      background: url(/images/ani2.png);
+      background-size: 100% 100%;
+      border: 2px solid steelblue;
+    }
+    50% {
+        background: url(/images/ani3.jpg);
+        background-size: 100% 100%;
+        border: 2px solid steelblue;
+    }
+    75% {
+        background: url(/images/ani4.jpg);
+        background-size: 100% 100%;
+        border: 2px solid steelblue;
+    }
+    100% {
+        background: url(/images/ani5.jpg);
+        background-size: 100% 100%;
+        border: 2px solid steelblue;
+    }
+  }
+.outer{
+    animation: cf4FadeInOut 25s infinite;
+    background: url(/images/ani1.jpg) ;
+    height: 403px;
+    background-size: 100% 100%;
+    border: 2px solid steelblue;    
+    margin: 114px 2px 2px 2px;
+}
+.product-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    display: inline-block;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #EDF2FD;
+    width: calc(100vh/2.5);
+    
+}
+.product-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    border-color: #007bff !important;
+}
+img{
+    height: calc(100vh/5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+h4{
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-image p{
+    padding: 0;
+    margin: 0;
+    color: dodgerblue;
+}
+.butt{
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    border-color: blue;
+   border-width: 1px;
+   background-color: #D1DEF7;
+   text-align: center;
+   color: orange;
+   font-weight: bold;
+   font-size: 15px;
+
+}
+.butt:focus{
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
+.category-row{
+    padding-left: 20px;
+}
+

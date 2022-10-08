@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding: 20px;
+    width: 100%;       
+}
+.container{
+    width: 80%;
+    height: 85%;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 10%;
+}
+.form-page{
+    padding: 10px;
+    width: 55%;
+}
+.img-background{ 
+    width: 40%;
+}
+.img-background img{ 
+    width: 35%;
+   height: 85%;
+   position: fixed;
+}
+.user-details{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.details-box{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.input-box{
+    height: 20px;
+   
+    margin: 20px 5px 12px 0;   
+}
+.input-box input {
+    border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: gainsboro;
+  border-width: 1.5px;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  width: 225px;
+}
+.details-box .input-box input:focus{
+    outline:none;
+}
+.button{
+    position: fixed;
+    bottom: 10px; 
+    right: 50%;  
+}
+.button input{
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin: 10px;
+    background-image: linear-gradient(to bottom, #D13FF0, #D13FF0);
+}
+.button input:hover{
+    outline: 2px solid #D13FF0;
+}
+.button input:active{
+    outline: 2px solid #D13FF0;
+}
+#warningDiv{
+    color: red;
+    font-weight: normal;
+    font-size: 14px;
+}
+.category-1{
+    display: flex;
+    margin: 14px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.category-2{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.category-2 label span{
+    margin: 5px;
+}
+.category-3{
+    margin: 10px;
+    font-weight: normal;
+    
+}
+.category-2 label{
+    font-weight: normal;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.category-5{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-box-1{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.input-box-1 input{
+    border-radius: 5px;
+    border-color: #d9d9d9;
+    border-width: 1px;
+    background-color: azure;
+}
+.input-box-list{
+    display: block;
+    margin-top: 20px;
+}
+.input-box-list select{
+    display: block;
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+}
+.details{
+    font-size: 16px;
+}
+.district-list{
+    font-size: 14px;
+}
